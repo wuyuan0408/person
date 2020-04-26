@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+<head>
+	<meta charset="UTF-8">
+	<title>沅哥個人網頁</title>
+	<link rel="Shortcut Icon" type="image/x-icon" href="assets/img/smalllogo.ico" />
+	<link rel="stylesheet" type="text/css" href="assets/CSS/main.css">
+	<script src="assets/js/jquery-3.4.0.min.js"></script> <!--載入jquery-->
+
+	<script>
+		function gogogo(){ /*朝指定位置前進中  使用jquery喔喔 速度850*/
+       		$('.here').css({'opacity':0,});
+			$('#'+gogogo.arguments[0]+' .here').css({'opacity':1,});
+			$('html,body').animate( { scrollTop: ($('#'+gogogo.arguments[0]).offset().top)},1000);}
+
+	</script>
+</head>
+<body>
+	<div class="background"></div>
+	<div class="header" id="top">
+	    <div class="logo"><a ><img  src="assets/img/logo.png" alt="三水之沅,歡迎您!!" width="800px"></a></div>
+	</div>
+	<div class="nav" id="menu">
+	    <nav>
+	        <ul>
+	    	    <li><a href="#learn" class="hka" onclick="gogogo('learn')" style="text-decoration:none;">學歷背景</a></li>
+	    	<!--
+	    	    <li><a href="#society" class="hka" onclick="gogogo('society')">社團經驗</a></li>
+	    	    <li><a href="#work" class="hka" onclick="gogogo('work')">工作經驗</a></li>
+	    	-->
+	    	    <li><a href="#interest" class="hka" onclick="gogogo('interest')" style="text-decoration:none;">興趣</a></li>
+	    	    <li><a href="#goal" class="hka" onclick="gogogo('goal')" style="text-decoration:none;">目標</a></li>
+	    	    <li><a href="#ownn" class="hka" onclick="gogogo('ownn')" style="text-decoration:none;">自我期許</a></li>
+	    	    <li><a href="#life" class="hka" onclick="gogogo('life')" style="text-decoration:none;">生活紀錄</a></li>
+	    	    <li><a href="#LineRebot" class="hka" onclick="gogogo('LineRebot')" style="text-decoration:none;">自製LINE機器</a></li>
+	    	    <li><a href="#gameRecord" class="hka" onclick="gogogo('gameRecord')" style="text-decoration:none;">遊戲紀錄</a></li>
+	        </ul>
+	    </nav>
+    </div>
+    <div class="myDiv"></div>
+    <div class="inoneDiv">
+        <div class="mainShow">
+        	<div id="learn" class="main_goshowa">
+        	    <h1 class="hka">學歷背景</h1><br>
+        	    <span class="text_area">
+                一、部分程式語言的基礎能力<br>
+                包含 <a class="hkb">C#(.NET)</a> 與 <a class="hkb">Java</a> 與 <a class="hkb">python3</a> <br><br>
+                二、具有前端網頁設計基礎 <br>
+                包含 <a class="hkb">HTML5</a> 與 <a class="hkb">CSS3</a><br><br>
+                三、目前就讀<a class="hkb">中原大學資管系</a><br><br>
+        	    </span>
+        	</div>
+        	<br>
+        <!--
+        	<div id="society" class="main_goshowb">
+        	    <h1 class="hka">社團經驗</h1><br>
+        	    <span class="text_area">
+                每日因花<a class="hkb">三小時的時間</a>在通勤，故無參加學校任何的社團活動。<br><br>
+        	    </span>
+        	</div>
+        	<br>
+        	<div id="work" class="main_goshowa">
+        	    <h1 class="hka">工作經驗</h1><br>
+        	    <span class="text_area">
+                曾經幫人剪片，以及使用模板幫人製作開頭影片。<br><br>
+        	    </span>
+        	</div>
+        	<br>
+        -->
+        	<div id="interest" class="main_goshowb">
+        	    <h1 class="hka">興趣</h1><br>
+        	    <span class="text_area">
+                玩<a class="hkb">傳說對決</a>，歷史桃園市第24名莉莉安，新竹縣第9莉莉安。<br><br>
+                同時也喜歡看古文觀止、古詩全集等<a class="hkb">文言文創作</a>。<br><br>
+                喜歡<a class="hkb">攝影</a>，特別是喜歡將長時間影片以濃縮的方式做成縮時。<br><br>
+                <img src="assets/img/g_01.jpg" style="height:212px;">
+                <!--<img src="assets/img/g_02.jpg" style="width:300px;">-->
+                <video width="380px" controls>
+                     <source src="assets/video/short.mp4" type="video/mp4">
+                </video>
+        	    </span>
+        	</div>
+        	<br>
+        	<div id="goal" class="main_goshowa">
+        	    <h1 class="hka">目標</h1><br>
+        	    <span class="text_area">
+                在這四年裡，我打算好好充實自己的程式能力以及商學院相關的能力，能在未來職場上或是工作上能夠幫助到自己。<br><br>
+        	    </span>
+        	</div>		
+        	<br>	
+        	<div id="ownn" class="main_goshowb">
+        	    <h1 class="hka">自我期許</h1><br>
+        	    <span class="text_area">
+                希望未來能好好賺錢，養活自己，不讓自己或家人露宿街頭。甚至更期待能讓自己的專長，成功地運用，而不是用在使用非法行為上。<br><br>
+        	    </span>
+        	</div>	
+        	<br>	
+        	<div id="life" class="main_goshowc">
+        	    <h1 class="hka">生活</h1><br>
+        	    <div class="main_life">
+        	    	<div class="lifecard"> <!--第一張 -->
+						<div class="lifecard-overin">
+							<div class="lifecard-img">
+								<img src="assets/img/b_1020630.jpg"  style="width:360px;">
+							</div>
+							<div class="lifecard-text">
+								<br><br>
+								<p>民國102年6月30日</p>
+								<p>人生中第一次滿滿的蓮花池(❛◡❛✿)/</p>
+								<p>地點：新埔</p>
+								<br><br>
+							</div>
+						</div>
+					</div>
+					<br>
+					<div class="lifecard"> <!--第二張 -->
+						<div class="lifecard-overin">
+							<div class="lifecard-img">
+								<img src="assets/img/b_1050124.jpg"  style="width:360px;">
+							</div>
+							<div class="lifecard-text">
+								<br><br>
+								<p>民國105年1月24日</p>
+								<p>人生中第一次滿滿的雪花，<br>不是油桐花喔喔!!(*´∀`)~♥</p>
+								<p>地點：關西，我家對山馬武督</p>
+								<br><br>
+							</div>
+						</div>
+					</div>
+					<br>
+					<div class="lifecard"> <!--第三張 -->
+						<div class="lifecard-overin">
+							<div class="lifecard-img">
+								<img src="assets/img/b_1060520.jpg"  style="width:360px;">
+							</div>
+							<div class="lifecard-text">
+								<br><br>
+								<p>民國106年5月20日</p>
+								<p>河還是如往常般的清澈!!(ゝ∀･)</p>
+								<p>地點：關西鳳山溪，南華橋下，<br>我家下河</p>
+								<br><br>
+							</div>
+						</div>
+					</div>
+              </div>
+              <div class="main_life">
+              	    <div class="lifecard"> <!--第一張 -->
+						<div class="lifecard-overin">
+							<div class="lifecard-img">
+								<img src="assets/img/b_1080114.jpg"  style="width:360px;">
+							</div>
+							<div class="lifecard-text">
+								<br><br>
+								<p>民國108年1月14日</p>
+								<p>棉花糖( ^ω^)/</p>
+								<p>地點：關西，顯伯公山頂天空</p>
+								<br><br>
+							</div>
+						</div>
+					</div>
+					<br>
+					<div class="lifecard"> <!--第二張 -->
+						<div class="lifecard-overin">
+							<div class="lifecard-img">
+								<img src="assets/img/b_1080511.jpg"  style="width:360px;">
+							</div>
+							<div class="lifecard-text">
+								
+								<p>民國108年5月11日</p>
+								<p>因為管理學課程，<br>來台北當志工ヽ(✿ﾟ▽ﾟ)ﾉ</p>
+								<p>地點：台北大龍峒地區</p>
+								<p>ps.拍我的是地上的腳架喔!!(´c_`)</p>
+								
+							</div>
+						</div>
+					</div>
+					<br>
+					<div class="lifecard"> <!--第三張 -->
+						<div class="lifecard-overin">
+							<div class="lifecard-img">
+								<img src="assets/img/b_1080713.jpg"  style="width:360px;">
+							</div>
+							<div class="lifecard-text">
+								<br><br>
+								<p>民國108年7月13日</p>
+								<p>偶爾陪家人外出去爬山!(*´∀`)~♥</p>
+								<p>地點：南投花蓮界山石門山!!</p>
+								<br><br>
+							</div>
+						</div>
+					</div>
+              </div>
+        	</div>
+        	<br>
+        	<div id="LineRebot" class="main_goshowa_linebot">
+        	    <h1 class="hka">自製LINE機器</h1><br>
+        	    <div class="main_linebotshowa">
+	        	    <span class="text_area">
+	                輸入鄉鎮名可查天氣<br>例如：臺中市大安區。<br>
+	        	    </span>
+	        	    <img src="assets/img/line01.jpg" style="width:250px;">
+        		</div>
+        		<div class="main_linebotshowa">
+	        	    <span class="text_area">
+	                輸入鄉鎮名可查口罩數<br>例如：臺中市大安區。<br><br>輸入「新冠肺炎」<br>可查各縣市確診總數。<br><br>輸入「性別」<br>可查各縣市確診性別數。
+	        	    </span>
+	        	    <img src="assets/img/line01.jpg" style="width:250px;">
+        		</div>
+        		<!--
+        		<div class="main_linebotshowa">
+	        	    <span class="text_area">
+	                輸入鄉鎮名可查天氣<br>
+	        	    </span>
+	        	    <img src="assets/img/line01.jpg" style="width:250px;">
+        		</div>
+        		-->
+        		<div style="clear:both"></div>
+        	</div>
+        	<br>
+        	<div id="gameRecord" class="main_goshowa">
+        	    <h1 class="hka">遊戲紀錄</h1><br>
+        	    <span class="text_area">
+                曾經幫人剪片，以及使用模板幫人製作開頭影片。<br><br>
+        	    </span>
+        	</div>			
+        </div>
+        <div class="sidebar_name">
+        	<h3>關於作者</h3>
+        	<div class="fourpic">
+        	<img src="assets/img/p1.jpg" alt="" style="height: 300px;"></div><br>
+        	<span class="text_need">
+        		作者：吳學沅<br>
+        		電話：0908112505(台灣之星)<br>
+        		地址：<br>
+        		新竹縣關西鎮南新里8鄰苧子園31號<br>
+        		e-mail：
+        		<a href="mailto:ffooger3@gmail.com">ffooger3@gmail.com</a>
+        	</span><br>
+        	<a href="https://www.facebook.com/ffoogera/"><img src="assets/img/linway1.png" style="height:50px;"></a>
+            <a href="https://www.instagram.com/_yuan0408/"><img src="assets/img/linway2.png" style="height:50px;"></a>
+            <a href="https://www.youtube.com/channel/UCkDxGhZ-pdGj3gZIBfcpAMQ"><img src="assets/img/linway3.png" style="height:50px;"></a>
+            <audio src="assets/music/012.mp3" controls autoplay></audio>
+        </div>
+        <div id="gotop" class="gotop">
+        	    <a href="#top"  onclick="gogogo('top')"><img src="assets/img/gotop.png" style="height: 80px;"></a>
+        </div>
+        <div id="midground" class="cloud_style"></div>
+        <div id="foreground" class="cloud_style"></div>	
+    </div>
+    <br><br><br>
+    <div style="clear:both"></div>
+    <div id="footer">
+    	<br>
+       <p>版權所有，請勿抄襲!!!!吳學沅 製作</p><br>
+       <p>建議使用  chrome瀏覽器瀏覽!!</p><br>
+       <p>背景音樂  Actium - Letting Go</p><br>
+    </div>
+</body>
+</html>
