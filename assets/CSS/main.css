@@ -1,0 +1,292 @@
+
+		    ul {
+                  display: block;
+                  list-style-type: disc;
+                  margin-block-start: 1em;
+                  margin-block-end: 1em;
+                  margin-inline-start: 0px;
+                  margin-inline-end: 0px;
+                  padding-inline-start: 40px;
+      }
+        body{ 
+        	      overflow: auto;
+	              height: 100%;
+                  background-attachment: fixed;
+                  transition: all 0.5s ease;
+                  min-width: 1450px;
+                  margin: 0px;
+                  background-size: 100% ;
+                  background-repeat: repeat-y;
+                  background-image: url("../img/background_01.jpg");
+              }
+        
+		.logo {
+                width: 150px;
+                margin-top: 20px;
+                float: left;}
+		.header{
+                padding: 20px 50px;
+                width: 1200px;
+                height: 150px;
+                }
+        .nav {
+                background: #FFE076; /*選單喔喔喔!!*/
+                width: 1100px;
+                height: 70px;
+                margin-left: calc(50% - 550px);
+                text-align: center;
+                margin-top: 10px;
+                font-size: 24px;
+                border-radius: 2px;
+                font-family: "標楷體";
+                }
+        #menu ul{
+                 float:right;
+                 list-style:none;
+                 }
+        #menu ul li{
+                 float:left;
+                 margin:0px 25px 0px 25px;
+                 }
+        .hka{color:black;   /*選單跟著滑鼠動次動*/
+        	 transition:0.5s;
+             padding: 5px;}
+        .hka:hover{color: black;
+        	       background-color:#00FF00;
+        	       border-radius: 10px;
+        	       border: 5px yellow solid;
+        	       padding: 0px;}
+        .hkb{color:black;   /*紅字跟著滑鼠動次動*/
+        	 transition:0.5s;
+             padding: 3px;}
+        .hkb:hover{color: black;
+        	       background-color:#00FF00;
+        	       border-radius: 10px;
+        	       border: 3px red solid;
+        	       padding: 3px;}
+        .inoneDiv {    /*主窗格*/
+
+                   width:1440px;
+                   height:3050px;
+                 }   
+        .mainShow {
+
+                   margin: 10px 25px;
+                   padding: 15px 0px;
+                   border: 1px #ccc solid;
+                   width: 1000px;
+                   height:3850px;
+                   float: left;
+                   background-color: rgba(255,255,255,0.3);
+               }
+         @-webkit-keyframes "gogoshowa"{
+                 0% {border: 10px rgb(255,0,0) double;}
+                 14% {border: 10px rgb(255, 165, 0) double;}
+                 28% {border: 10px rgb(255, 255, 0) double;}
+                 42% {border: 10px rgb(0, 255, 0) double;}
+                 57% {border: 10px rgb(0, 127, 255) double;}
+                 71% {border: 10px rgb(0, 0, 255) double;}
+                 85% {border: 10px rgb(139, 0, 255) double;}
+                 100% {border: 10px rgb(255, 0, 0) double;}
+               }
+        .main_goshowa {
+        	        display: block;
+                  width: 950px;
+                  padding: 8px;
+                  border: 10px green double; /*萬一不支援備用*/
+                  margin: 10px 5px;
+                  -webkit-animation-name: 'gogoshowa';
+                  -webkit-animation-duration: 10s;
+                  -webkit-animation-iteration-count: infinite;
+        }
+          @-webkit-keyframes "gogoshowb"{                
+                 0% {border: 10px rgb(0, 127, 255) double;}
+                 14% {border: 10px rgb(0, 0, 255) double;}
+                 28% {border: 10px rgb(139, 0, 255) double;}
+                 42% {border: 10px rgb(255,0,0) double;}
+                 57% {border: 10px rgb(255, 165, 0) double;}
+                 71% {border: 10px rgb(255, 255, 0) double;}
+                 85% {border: 10px rgb(0, 255, 0) double;}
+                 100% {border: 10px rgb(0, 127, 255) double;}
+               }
+         .main_goshowb {
+        	       display: block;
+                   width: 950px;
+                   padding: 8px;
+                   border: 10px #0000CD double;
+                   margin: 10px 5px;
+                   -webkit-animation-name: 'gogoshowb';
+                  -webkit-animation-duration: 10s;
+                  -webkit-animation-iteration-count: infinite;
+        }
+
+        .main_goshowc {
+                   display: block;
+                   width: 950px;
+                   height:1040px;
+                   padding: 8px;
+                   border: 10px #0000CD double;
+                   margin: 10px 5px;
+                   -webkit-animation-name: 'gogoshowa';
+                  -webkit-animation-duration: 10s;
+                  -webkit-animation-iteration-count: infinite;
+
+        }
+        .main_goshowa_linebot {
+                 display: block;
+                   width: 950px;
+                   height:680px;
+                   padding: 8px;
+                   border: 10px green double;
+                   margin: 10px 5px;
+                   -webkit-animation-name: 'gogoshowb';
+                  -webkit-animation-duration: 10s;
+                  -webkit-animation-iteration-count: infinite;
+        }
+
+        .main_linebotshowa{
+                  display: block;
+                  float:left;
+                   width: 265px;
+                   height:500px;
+                   padding: 8px;
+                   border: 5px rgba(0, 127, 255,0.8) double;
+                   border-radius: 10px;
+                   margin: 10px 5px;
+
+        }
+        .main_life{             
+                    display: block;
+                    width: 400px;
+                    padding: 8px;
+                    border: 4px green double;
+                    margin: 10px 5px;
+                    float:left;
+        }
+
+         .lifecard {            /*生活-外框*/
+                    background-color: transparent;
+                    width:360px;
+                    height:270px;
+                    border: 5px double #0000CD;
+ 
+          }
+          .lifecard-overin {   /*生活-內框*/
+                    position: relative;
+                    width:360px;
+                    height:270px;
+                    text-align: center;
+                    transition: transform 1s;
+                    transform-style: preserve-3d;
+          }
+          .lifecard-img {     /*生活-圖'*/
+                    position: absolute;
+                    width:360px;
+                    height:270px;
+ 
+          }
+          .lifecard-text {     /*生活-字*/
+                    position: absolute;
+                    width:360px;
+                    height:270px;
+                    font-size: 24px;
+                    transform: rotateY(180deg);
+                    background-color: rgba(255,255,255,0.7);
+          }
+          .lifecard:hover .lifecard-overin {   /*生活變化*/
+                    transform: rotateY(180deg);
+          }
+
+        .sidebar_name {                          /*作者*/
+        	       right: 50px;
+        	       display: block;;
+        	       z-index: 3;
+        	       /*position:absolute;*/
+                   width: 350px;
+                   padding: 8px;
+                   border: 5px blue double;
+                   margin: 10px 5px;
+                   float: left;
+                   background-color: rgba(255,255,255,0.3);
+                  }
+        .text_need{
+        	       font-size: 20px;
+        }
+        .text_area{
+        	       font-size: 24px;
+        }
+        .myDiv {  /*投影片*/
+                    width: 720px;
+                    height: 540px;
+                    margin: 20px auto;
+                    margin-left: calc(50% - 360px);
+                    background-size: 720px,540px;
+                    background-position: center;
+                    -webkit-animation-name: 'loop';
+                    -webkit-animation-duration: 25s;
+                    -webkit-animation-iteration-count: infinite;
+                }
+                 @-webkit-keyframes "loop"{
+                 0% {background: url(../img/b_10807132.jpg) no-repeat;height: 540px;}
+                 16% {background: url(../img/b_1020630.jpg) no-repeat;height: 540px;}
+                 32% {background: url(../img/b_1050124.jpg) no-repeat;height: 540px;}
+                 46% {background: url(../img/b_1060520.jpg) no-repeat;height: 540px;}
+                 60% {background: url(../img/b_1080114.jpg) no-repeat;height: 540px;}
+                 76% {background: url(../img/b_1080511.jpg) no-repeat;height: 540px;}
+                 90% {background: url(../img/b_1080713.jpg) no-repeat;height: 540px;}
+                 100% {background: url(../img/b_10807132.jpg) no-repeat;height: 540px;}
+               }
+        .gotop {                              /*萬馬奔頂*/
+                   position: fixed; 
+                   right: 30px;
+                   bottom: 40px;
+                   z-index: 99;
+              }
+        /*萬雲奔騰*/
+        @-webkit-keyframes cloud-moved {
+        from {
+          background-position:0% 0%
+        }
+        to { 
+          background-position: 600% 0%
+        }
+      }
+       @keyframes cloud-moved {
+        from {
+          background-position: 0% 0%
+        }
+        to { 
+          background-position: 600% 0%
+        }
+      }
+        .cloud_style{
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        
+      }
+      div#midground{
+        background:url('../img/midground.png')repeat 20% 0%;
+        z-index: -2;
+        -webkit-animation: cloud-moved  100s linear infinite;
+        -moz-animation: cloud-moved  100s linear infinite;
+        -ms-animation: cloud-moved  100s linear infinite;
+        animation: cloud-moved  100s linear infinite;
+      }
+      div#foreground{
+        background:url('../img/foreground.png')repeat 35% 0%;
+        z-index: -1;
+        -webkit-animation: cloud-moved  50s linear infinite;
+        -moz-animation: cloud-moved  50s linear infinite;
+        -ms-animation: cloud-moved  50s linear infinite;
+        animation: cloud-moved  50s linear infinite;
+      }
+        #footer {                             /*底*/
+                     padding:0;
+                     display:block;
+                     background-color: rgba(255,255,255,0.3);
+        	         min-width: 100%;
+                     margin-top: 20px !important;
+                     text-align:center;}
